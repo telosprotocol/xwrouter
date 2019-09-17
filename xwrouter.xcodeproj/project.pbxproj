@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		889F5C1722C5C61E006CD0F3 /* xwrouter_xip_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 889F5C1422C5C61E006CD0F3 /* xwrouter_xip_handler.cc */; };
+		889F5C1822C5C61E006CD0F3 /* xwrouter_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 889F5C1522C5C61E006CD0F3 /* xwrouter_handler.cc */; };
+		889F5C1922C5C61E006CD0F3 /* xwrouter_xid_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 889F5C1622C5C61E006CD0F3 /* xwrouter_xid_handler.cc */; };
+		889F5C1D22C5C634006CD0F3 /* xwrouter_xip_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 889F5C1A22C5C634006CD0F3 /* xwrouter_xip_handler.h */; };
+		889F5C1E22C5C634006CD0F3 /* xwrouter_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 889F5C1B22C5C634006CD0F3 /* xwrouter_handler.h */; };
+		889F5C1F22C5C634006CD0F3 /* xwrouter_xid_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 889F5C1C22C5C634006CD0F3 /* xwrouter_xid_handler.h */; };
+		88D1617122B28E87001838D3 /* wrouter_base_routing.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615822B28E87001838D3 /* wrouter_base_routing.h */; };
+		88D1617222B28E87001838D3 /* wrouter_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615922B28E87001838D3 /* wrouter_utils.h */; };
+		88D1617322B28E87001838D3 /* rumor_message_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615B22B28E87001838D3 /* rumor_message_handler.h */; };
+		88D1617422B28E87001838D3 /* wrouter_message_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615C22B28E87001838D3 /* wrouter_message_handler.h */; };
+		88D1617522B28E87001838D3 /* multi_routing.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615E22B28E87001838D3 /* multi_routing.h */; };
+		88D1617622B28E87001838D3 /* register_message_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1615F22B28E87001838D3 /* register_message_handler.h */; };
+		88D1617722B28E87001838D3 /* multi_routing.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616122B28E87001838D3 /* multi_routing.cc */; };
+		88D1617822B28E87001838D3 /* register_message_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616222B28E87001838D3 /* register_message_handler.cc */; };
+		88D1617922B28E87001838D3 /* register_routing_table.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616322B28E87001838D3 /* register_routing_table.cc */; };
+		88D1617A22B28E87001838D3 /* root_message_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616422B28E87001838D3 /* root_message_handler.cc */; };
+		88D1617B22B28E87001838D3 /* root_routing.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616522B28E87001838D3 /* root_routing.cc */; };
+		88D1617C22B28E87001838D3 /* root_routing_manager.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616622B28E87001838D3 /* root_routing_manager.cc */; };
+		88D1617D22B28E87001838D3 /* rumor_message_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616722B28E87001838D3 /* rumor_message_handler.cc */; };
+		88D1617E22B28E87001838D3 /* wrouter_message_handler.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616822B28E87001838D3 /* wrouter_message_handler.cc */; };
+		88D1617F22B28E87001838D3 /* xwrouter.cc in Sources */ = {isa = PBXBuildFile; fileRef = 88D1616922B28E87001838D3 /* xwrouter.cc */; };
+		88D1618022B28E87001838D3 /* root_message_handler.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1616B22B28E87001838D3 /* root_message_handler.h */; };
+		88D1618122B28E87001838D3 /* root_routing.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1616C22B28E87001838D3 /* root_routing.h */; };
+		88D1618222B28E87001838D3 /* root_routing_manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1616D22B28E87001838D3 /* root_routing_manager.h */; };
+		88D1618322B28E87001838D3 /* register_routing_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1616E22B28E87001838D3 /* register_routing_table.h */; };
+		88D1618422B28E87001838D3 /* xwrouter.h in Headers */ = {isa = PBXBuildFile; fileRef = 88D1617022B28E87001838D3 /* xwrouter.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		889F5C1422C5C61E006CD0F3 /* xwrouter_xip_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xwrouter_xip_handler.cc; sourceTree = "<group>"; };
+		889F5C1522C5C61E006CD0F3 /* xwrouter_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xwrouter_handler.cc; sourceTree = "<group>"; };
+		889F5C1622C5C61E006CD0F3 /* xwrouter_xid_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xwrouter_xid_handler.cc; sourceTree = "<group>"; };
+		889F5C1A22C5C634006CD0F3 /* xwrouter_xip_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xwrouter_xip_handler.h; sourceTree = "<group>"; };
+		889F5C1B22C5C634006CD0F3 /* xwrouter_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xwrouter_handler.h; sourceTree = "<group>"; };
+		889F5C1C22C5C634006CD0F3 /* xwrouter_xid_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xwrouter_xid_handler.h; sourceTree = "<group>"; };
+		88D1615822B28E87001838D3 /* wrouter_base_routing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrouter_base_routing.h; sourceTree = "<group>"; };
+		88D1615922B28E87001838D3 /* wrouter_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrouter_utils.h; sourceTree = "<group>"; };
+		88D1615B22B28E87001838D3 /* rumor_message_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rumor_message_handler.h; sourceTree = "<group>"; };
+		88D1615C22B28E87001838D3 /* wrouter_message_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrouter_message_handler.h; sourceTree = "<group>"; };
+		88D1615E22B28E87001838D3 /* multi_routing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = multi_routing.h; sourceTree = "<group>"; };
+		88D1615F22B28E87001838D3 /* register_message_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = register_message_handler.h; sourceTree = SOURCE_ROOT; };
+		88D1616122B28E87001838D3 /* multi_routing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = multi_routing.cc; sourceTree = "<group>"; };
+		88D1616222B28E87001838D3 /* register_message_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = register_message_handler.cc; sourceTree = "<group>"; };
+		88D1616322B28E87001838D3 /* register_routing_table.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = register_routing_table.cc; sourceTree = "<group>"; };
+		88D1616422B28E87001838D3 /* root_message_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = root_message_handler.cc; sourceTree = "<group>"; };
+		88D1616522B28E87001838D3 /* root_routing.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = root_routing.cc; sourceTree = "<group>"; };
+		88D1616622B28E87001838D3 /* root_routing_manager.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = root_routing_manager.cc; sourceTree = "<group>"; };
+		88D1616722B28E87001838D3 /* rumor_message_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rumor_message_handler.cc; sourceTree = "<group>"; };
+		88D1616822B28E87001838D3 /* wrouter_message_handler.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = wrouter_message_handler.cc; sourceTree = "<group>"; };
+		88D1616922B28E87001838D3 /* xwrouter.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = xwrouter.cc; sourceTree = "<group>"; };
+		88D1616B22B28E87001838D3 /* root_message_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_message_handler.h; sourceTree = "<group>"; };
+		88D1616C22B28E87001838D3 /* root_routing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_routing.h; sourceTree = "<group>"; };
+		88D1616D22B28E87001838D3 /* root_routing_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = root_routing_manager.h; sourceTree = "<group>"; };
+		88D1616E22B28E87001838D3 /* register_routing_table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = register_routing_table.h; sourceTree = SOURCE_ROOT; };
+		88D1617022B28E87001838D3 /* xwrouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xwrouter.h; sourceTree = SOURCE_ROOT; };
+		99FA78CB22B2726600B5D6BE /* libxwrouter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libxwrouter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99FA78C822B2726500B5D6BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88D1615622B28E6D001838D3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				88D1615A22B28E87001838D3 /* message_handler */,
+				88D1615D22B28E87001838D3 /* multi_routing */,
+				88D1615F22B28E87001838D3 /* register_message_handler.h */,
+				88D1616E22B28E87001838D3 /* register_routing_table.h */,
+				88D1616A22B28E87001838D3 /* root */,
+				88D1616F22B28E87001838D3 /* source */,
+				88D1616022B28E87001838D3 /* src */,
+				88D1615722B28E87001838D3 /* wrouter_utils */,
+				88D1617022B28E87001838D3 /* xwrouter.h */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		88D1615722B28E87001838D3 /* wrouter_utils */ = {
+			isa = PBXGroup;
+			children = (
+				88D1615822B28E87001838D3 /* wrouter_base_routing.h */,
+				88D1615922B28E87001838D3 /* wrouter_utils.h */,
+			);
+			path = wrouter_utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		88D1615A22B28E87001838D3 /* message_handler */ = {
+			isa = PBXGroup;
+			children = (
+				88D1615B22B28E87001838D3 /* rumor_message_handler.h */,
+				889F5C1B22C5C634006CD0F3 /* xwrouter_handler.h */,
+				889F5C1C22C5C634006CD0F3 /* xwrouter_xid_handler.h */,
+				889F5C1A22C5C634006CD0F3 /* xwrouter_xip_handler.h */,
+				88D1615C22B28E87001838D3 /* wrouter_message_handler.h */,
+			);
+			path = message_handler;
+			sourceTree = SOURCE_ROOT;
+		};
+		88D1615D22B28E87001838D3 /* multi_routing */ = {
+			isa = PBXGroup;
+			children = (
+				88D1615E22B28E87001838D3 /* multi_routing.h */,
+			);
+			path = multi_routing;
+			sourceTree = SOURCE_ROOT;
+		};
+		88D1616022B28E87001838D3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				88D1616122B28E87001838D3 /* multi_routing.cc */,
+				889F5C1522C5C61E006CD0F3 /* xwrouter_handler.cc */,
+				889F5C1622C5C61E006CD0F3 /* xwrouter_xid_handler.cc */,
+				889F5C1422C5C61E006CD0F3 /* xwrouter_xip_handler.cc */,
+				88D1616222B28E87001838D3 /* register_message_handler.cc */,
+				88D1616322B28E87001838D3 /* register_routing_table.cc */,
+				88D1616422B28E87001838D3 /* root_message_handler.cc */,
+				88D1616522B28E87001838D3 /* root_routing.cc */,
+				88D1616622B28E87001838D3 /* root_routing_manager.cc */,
+				88D1616722B28E87001838D3 /* rumor_message_handler.cc */,
+				88D1616822B28E87001838D3 /* wrouter_message_handler.cc */,
+				88D1616922B28E87001838D3 /* xwrouter.cc */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		88D1616A22B28E87001838D3 /* root */ = {
+			isa = PBXGroup;
+			children = (
+				88D1616B22B28E87001838D3 /* root_message_handler.h */,
+				88D1616C22B28E87001838D3 /* root_routing.h */,
+				88D1616D22B28E87001838D3 /* root_routing_manager.h */,
+			);
+			path = root;
+			sourceTree = SOURCE_ROOT;
+		};
+		88D1616F22B28E87001838D3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+		99FA78C222B2726500B5D6BE = {
+			isa = PBXGroup;
+			children = (
+				88D1615622B28E6D001838D3 /* source */,
+				99FA78CC22B2726600B5D6BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99FA78CC22B2726600B5D6BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99FA78CB22B2726600B5D6BE /* libxwrouter.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		99FA78C922B2726500B5D6BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D1618022B28E87001838D3 /* root_message_handler.h in Headers */,
+				889F5C1D22C5C634006CD0F3 /* xwrouter_xip_handler.h in Headers */,
+				88D1618322B28E87001838D3 /* register_routing_table.h in Headers */,
+				889F5C1F22C5C634006CD0F3 /* xwrouter_xid_handler.h in Headers */,
+				88D1617422B28E87001838D3 /* wrouter_message_handler.h in Headers */,
+				88D1618422B28E87001838D3 /* xwrouter.h in Headers */,
+				88D1618222B28E87001838D3 /* root_routing_manager.h in Headers */,
+				88D1617122B28E87001838D3 /* wrouter_base_routing.h in Headers */,
+				88D1617622B28E87001838D3 /* register_message_handler.h in Headers */,
+				88D1617522B28E87001838D3 /* multi_routing.h in Headers */,
+				889F5C1E22C5C634006CD0F3 /* xwrouter_handler.h in Headers */,
+				88D1617322B28E87001838D3 /* rumor_message_handler.h in Headers */,
+				88D1617222B28E87001838D3 /* wrouter_utils.h in Headers */,
+				88D1618122B28E87001838D3 /* root_routing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		99FA78CA22B2726500B5D6BE /* xwrouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99FA78CF22B2726600B5D6BE /* Build configuration list for PBXNativeTarget "xwrouter" */;
+			buildPhases = (
+				99FA78C722B2726500B5D6BE /* Sources */,
+				99FA78C822B2726500B5D6BE /* Frameworks */,
+				99FA78C922B2726500B5D6BE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = xwrouter;
+			productName = xwrouter;
+			productReference = 99FA78CB22B2726600B5D6BE /* libxwrouter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99FA78C322B2726500B5D6BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Taylor Wei";
+				TargetAttributes = {
+					99FA78CA22B2726500B5D6BE = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 99FA78C622B2726500B5D6BE /* Build configuration list for PBXProject "xwrouter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 99FA78C222B2726500B5D6BE;
+			productRefGroup = 99FA78CC22B2726600B5D6BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99FA78CA22B2726500B5D6BE /* xwrouter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99FA78C722B2726500B5D6BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88D1617C22B28E87001838D3 /* root_routing_manager.cc in Sources */,
+				88D1617A22B28E87001838D3 /* root_message_handler.cc in Sources */,
+				88D1617722B28E87001838D3 /* multi_routing.cc in Sources */,
+				88D1617922B28E87001838D3 /* register_routing_table.cc in Sources */,
+				889F5C1722C5C61E006CD0F3 /* xwrouter_xip_handler.cc in Sources */,
+				88D1617822B28E87001838D3 /* register_message_handler.cc in Sources */,
+				889F5C1822C5C61E006CD0F3 /* xwrouter_handler.cc in Sources */,
+				88D1617F22B28E87001838D3 /* xwrouter.cc in Sources */,
+				889F5C1922C5C61E006CD0F3 /* xwrouter_xid_handler.cc in Sources */,
+				88D1617B22B28E87001838D3 /* root_routing.cc in Sources */,
+				88D1617D22B28E87001838D3 /* rumor_message_handler.cc in Sources */,
+				88D1617E22B28E87001838D3 /* wrouter_message_handler.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		99FA78CD22B2726600B5D6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../xdepends/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../ ../xdepends/include ../third_party";
+			};
+			name = Debug;
+		};
+		99FA78CE22B2726600B5D6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../xdepends/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				USER_HEADER_SEARCH_PATHS = "../ ../xdepends/include ../third_party";
+			};
+			name = Release;
+		};
+		99FA78D022B2726600B5D6BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		99FA78D122B2726600B5D6BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99FA78C622B2726500B5D6BE /* Build configuration list for PBXProject "xwrouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA78CD22B2726600B5D6BE /* Debug */,
+				99FA78CE22B2726600B5D6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99FA78CF22B2726600B5D6BE /* Build configuration list for PBXNativeTarget "xwrouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99FA78D022B2726600B5D6BE /* Debug */,
+				99FA78D122B2726600B5D6BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99FA78C322B2726500B5D6BE /* Project object */;
+}
